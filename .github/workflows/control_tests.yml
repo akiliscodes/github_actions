@@ -1,5 +1,7 @@
 name: Control Push
-on: push
+on: 
+  schedule:
+    - cron:  '*/30 * * * *'
 jobs:
   qa:
     name: Check tests
